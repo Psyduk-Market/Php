@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="h1 text-center py-2">My Currency Converter App</h1>
+            </div>
+        </div>
+        <div class="row py-3">
+            <div class="col-6 col-lg-2 order-lg-0 order-0 ">
+                <h3>01/01/1999</h3>
+            </div>
+            <div class="col-12 col-lg-8 order-lg-1 order-2">
+                <input type="range" min="1" max="100" value="50" class="slider">
+            </div>
+            <div class="col-6 col-lg-2 order-lg-2 order-1">
+                <h3>03/10/2018</h3>
+            </div>
+        </div>
+        <hr>
+        <div class="row py-2 align-items-center">
+            <div class="col-6 order-0 col-lg-2 order-lg-0">
+                <div class="dropdown">
+                    <button id="convertFromDropdown" class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Convert From
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item convertFrom" type="button" value="USD">USD</button>
+                        <button class="dropdown-item convertFrom" type="button" value="EUR">EUR</button>
+                        <button class="dropdown-item convertFrom" type="button" value="NZD">NZD</button>
+                        <button class="dropdown-item convertFrom" type="button" value="GBP">GBP</button>
+                        <button class="dropdown-item convertFrom" type="button" value="CAD">CAD</button>
+                        <button class="dropdown-item convertFrom" type="button" value="SEK">SEK</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 order-2 col-lg-3 order-lg-1">
+                <label id="currency1Label" for="convertFromText">Currency 1</label>
+                <textarea id="convertFromText" class="form-control" rows="3">1.00</textarea>
+            </div>
+            <div class="col-2 order-3 col-lg-2 order-lg-2">
+                <div class="text-center">
+                    <button class="btn btn-primary" id="swap"><i class="fas fa-exchange-alt"></i></button>
+                </div>
+            </div>
+            <div class="col-5 order-4 col-lg-3 order-lg-3">
+                <label id="currency2Label" for="convertToText">Currency 2</label>
+                <textarea id="convertToText" class="form-control" rows="3">1.00</textarea>
+            </div>
+            <div class="col-6 order-1 col-lg-2 order-lg-4">
+                <div class="dropdown">
+                    <button id="convertToDropdown" class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Convert To
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item convertTo" type="button" value="USD">USD</button>
+                        <button class="dropdown-item convertTo" type="button" value="EUR">EUR</button>
+                        <button class="dropdown-item convertTo" type="button" value="NZD">NZD</button>
+                        <button class="dropdown-item convertTo" type="button" value="GBP">GBP</button>
+                        <button class="dropdown-item convertTo" type="button" value="CAD">CAD</button>
+                        <button class="dropdown-item convertTo" type="button" value="SEK">SEK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row py-2">
+            <div class="col-12 order-1 col-lg-10 order-lg-0">
+                <h2 id="conversionRate">1 {CURRENCY1} = X.XX {CURRENCY2}</h2>
+            </div>
+            <div class="col-12 order-0 col-lg-2 order-lg-1">
+                <button id="convert" class="btn btn-success btn-block">Convert</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
