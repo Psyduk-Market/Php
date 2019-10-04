@@ -1,0 +1,22 @@
+/* Create your stylesheet here! */
+
+#firstHeading {
+	background-color: red;
+}
+
+#secondHeading {
+	background-color: blue;
+}
+
+#thirdHeading {
+	border: 1px dotted green;
+}
+
+#firtParagraph {
+	font-style: oblique;
+}
+
+#secondParagraph {
+	font-style: oblique;
+	font-size: 40px;
+}

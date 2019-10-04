@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <!-- BEGIN MAKING YOUR WEB PAGE -->
+	
+	
+	
+	<div class="container mx-auto">
+		<div class="row pb-5">
+			<div class="col-12">
+				<center><h1>Currency Converter</h1></center>
+			</div>
+		</div>
+		
+		<div class="row pb-5">
+			<div class="col-2">
+				<h3 class="text-center">01/01/1999</h3>
+			</div>
+			<div class="col-8">
+				<input class="btn-block" type="range" min="1" max="100" value="100">
+			</div>
+			<div class="col-2">
+				<h3 class="text-center">31/12/2019</h3>
+			</div>
+		</div>
+		
+		<div class="row my-auto pb-5">
+		
+			<div class="col-2 text-center my-auto">
+				<div class="dropdown">
+				  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Currency Type
+				  </button>
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+					<button class="dropdown-item" type="button">USD</button>
+					<button class="dropdown-item" type="button">EUR</button>
+					<button class="dropdown-item" type="button">NZD</button>
+					<button class="dropdown-item" type="button">GBP</button>
+					<button class="dropdown-item" type="button">CAD</button>
+					<button class="dropdown-item" type="button">SEK</button>
+				  </div>
+				</div>
+			</div>
+			
+			<div class="col-3">
+				<div class="form-group">
+					<label for="exampleFormControlInput1">Currency 1</label>
+					<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="100.00">
+				</div>
+			</div>
+			
+			<div class="col-2 text-center my-auto">
+				<button type="button" class="fas fa-exchange-alt btn btn-primary"></button>
+			</div>
+			
+			<div class="col-3">
+				<div class="form-group">
+					<label for="exampleFormControlInput1">Currency 2</label>
+					<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="40.00">
+				</div>
+			</div>
+			
+			<div class="col-2 text-center my-auto">
+				<div class="dropdown">
+				  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Currency Type
+				  </button>
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+					<button id="convertFromUSD" class="dropdown-item" type="button" value="USD">USD</button>
+					<button class="dropdown-item" type="button">EUR</button>
+					<button class="dropdown-item" type="button">NZD</button>
+					<button class="dropdown-item" type="button">GBP</button>
+					<button class="dropdown-item" type="button">CAD</button>
+					<button class="dropdown-item" type="button">SEK</button>
+				  </div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="row pb-5">
+		
+			<div class="col-10">
+				<h2>1 {CURRENCY 1} = XXX.XX {CURRENCY 2}</h2>
+			</div>
+			
+			<div class="col-2">
+				<button type="button" class="btn btn-success">convert</button>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	
+	
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
+</html>
