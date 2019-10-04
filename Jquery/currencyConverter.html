@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Currency Converter</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="h1 text-center py-2">My Currency Converter App</h1>
+        </div>
+    </div>
+    <div class="row py-3">
+        <div class="col-2">
+            <h3>01/01/1999</h3>
+        </div>
+        <div class="col-8">
+            <input type="range" min="1" max="100" value="50" class="w-100">
+        </div>
+        <div class="col-2">
+            <h3>26/09/2019</h3>
+        </div>
+    </div>
+    <hr>
+    <div class="row py-2 align-items-center">
+        <div class="col-2">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="exchangeFrom" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Convert From
+                </button>
+                <div class="dropdown-menu" aria-labelledby="exchangeFrom">
+                    <button class="dropdown-item convertFrom" type="button" value="USD">USD</button>
+                    <button class="dropdown-item convertFrom" type="button">EUR</button>
+                    <button class="dropdown-item convertFrom" type="button">NZD</button>
+                    <button class="dropdown-item convertFrom" type="button">GBP</button>
+                    <button class="dropdown-item convertFrom" type="button">CAD</button>
+                    <button class="dropdown-item convertFrom" type="button">SEK</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <label for="convertFromTextArea">Currency 1</label>
+            <textarea class="form-control convertFromExchange" id="convertFromTextArea" rows="3"></textarea>
+        </div>
+        <div class="col-2">
+            <div class="text-center">
+                <button class="btn btn-primary" id="convertButton"><i class="fas fa-exchange-alt"></i></button>
+            </div>
+        </div>
+        <div class="col-3">
+            <label for="convertToTextArea">Currency 2</label>
+            <textarea class="form-control convertToExchange" id="convertToTextArea" rows="3"></textarea>
+        </div>
+        <div class="col-2">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="exchangeTo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Convert To
+                </button>
+                <div class="dropdown-menu" aria-labelledby="exchangeTo">
+                    <button id="convertFromUSD" class="dropdown-item" type="button" value="USD">USD</button>
+                    <button class="dropdown-item convertTo" type="button">EUR</button>
+                    <button class="dropdown-item convertTo" type="button">NZD</button>
+                    <button class="dropdown-item convertTo" type="button">GBP</button>
+                    <button class="dropdown-item convertTo" type="button">CAD</button>
+                    <button class="dropdown-item convertTo" type="button">SEK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row py-2">
+        <div class="col-10">
+            <h2>1 {CURRENCY1} = X.XX {CURRENCY2}</h2>
+        </div>
+        <div class="col-2">
+            <button class="btn btn-success btn-block" id="showConvertion">Convert</button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
+</html>
